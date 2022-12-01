@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/style.css">
     <title>Document</title>
 </head>
-<body class="flex flex-col items-center justify-center">
+<body class="bg-first">
+
     <!-- header -->
-    <header class="px-60 py-8">
+    <header class="container mx-auto py-10 max-w-[1300px]">
         <!-- Logo and contacts -->
             <!-- Left side -->
         <div class="mb-6 flex flex-row flex-nowrap items-center justify-between">
@@ -22,28 +26,142 @@
                 <!-- Contacts -->
                 <div class="flex flex-col justify-between pr-9">
                     <div class="inline-flex items-center justify-between">
-                        <h4 class="pr-9">E-mail:</h4>
-                        <h4 class="font-semibold">asv@garant-tehnika.ru</h4>
+                        <h4 class="text-sm pr-9">E-mail:</h4>
+                        <h4 class="text-sm font-semibold">asv@garant-tehnika.ru</h4>
                     </div>
                     <div class="inline-flex items-center justify-between">
-                        <h4 class="pr-9">Телефон:</h4>
-                        <h4 class="font-semibold">8 (495) 989-95-70</h4>
+                        <h4 class="text-sm pr-9">Телефон:</h4>
+                        <h4 class="text-sm font-semibold">8 (495) 989-95-70</h4>
                     </div>
                 </div>
                 <!-- Buttons -->
-                <button class="px-6 py-1 border-8 border-orange-400"><img src="/img/button/obr_sv.svg" alt="obr_sv"></button>
+                <button class="px-6 py-1 border-8 border-orange-400 hover:bg-orange-100"><img src="/img/button/obr_sv.svg" alt="obr_sv"></button>
             </div>
         </div>
         <!-- Навигационная панель -->
         <nav>
-            <ul class="font-bold text-2xl inline-flex flex-nowrap">
-                <li class="pr-20 py-0 border-r-4 border-gray-300"><a href="#">Каталог спецтехники</a></li>
-                <li class="pr-20 pl-20 border-r-4 border-gray-300"><a href="#">Услуги</a></li>
-                <li class="pr-20 pl-20 border-r-4 border-gray-300"><a href="#">Наши отгрузки</a></li>
-                <li class="pr-20 pl-20 border-r-4 border-gray-300"><a href="#">Контакты</a></li>
-                <li class="pl-20"><a href="#">Новости</a></li>
+            <ul class="font-bold text-xl flex justify-between">
+                <li><a class="hover:text-gray-600" href="#">Каталог спецтехники</a></li>
+                <li><span class="border-r-4"></span></li>
+                <li><a class="hover:text-gray-600" href="#">Услуги</a></li>
+                <li><span class="border-r-4"></span></li>
+                <li><a class="hover:text-gray-600" href="#">Наши отгрузки</a></li>
+                <li><span class="border-r-4"></span></li>
+                <li><a class="hover:text-gray-600" href="#">Контакты</a></li>
+                <li><span class="border-r-4"></span></li>
+                <li><a class="hover:text-gray-600" href="#">Новости</a></li>
             </ul>
         </nav>
     </header>
+    <!-- main -->
+    <main class="container mx-auto max-w-[1300px] mt-16">
+        <!-- first section -->
+        <section>
+            <img class="p-0 border-[10px] border-orange-400" src="/img/card/main_card.png">
+            <div class="flex justify-between content-center mt-12">
+                <button class="hover:scale-105 transition-all"><img src="/img/icon/icon_arrow_left.svg" alt=""></button>
+                <div class="flex justify-between items-center space-x-5">
+                    <button class="bg-orange-400 w-10 h-2 hover:bg-orange-500"></button>
+                    <button class="bg-gray-300 w-10 h-2 hover:bg-gray-500"></button>
+                    <button class="bg-gray-300 w-10 h-2 hover:bg-gray-500"></button>
+                    <button class="bg-gray-300 w-10 h-2 hover:bg-gray-500"></button>
+                    <button class="bg-gray-300 w-10 h-2 hover:bg-gray-500"></button>
+                    <button class="bg-gray-300 w-10 h-2 hover:bg-gray-500"></button>
+                    <button class="bg-gray-300 w-10 h-2 hover:bg-gray-500"></button>
+                    <button class="bg-gray-300 w-10 h-2 hover:bg-gray-500"></button>
+                    <button class="bg-gray-300 w-10 h-2 hover:bg-gray-500"></button>
+                    <button class="bg-gray-300 w-10 h-2 hover:bg-gray-500"></button>
+                </div>
+                <button class="hover:scale-105 transition-all"><img src="/img/icon/icon_arrow_right.svg" alt=""></button>
+            </div>
+        </section>
+        <!-- second section -->
+        <section class="mt-28">
+            <h2 class="text-5xl font-semibold pl-36 font-overpass">Каталог Спецтехники</h2>
+            <div class="grid grid-cols-4 gap-[20px] mt-20">
+                <div class="px-6 pt-11 pb-4 border-2 border-black flex flex-col content-between">
+                    <h3 class="text-xl font-bold pb-6">Фургоны в наличии</h3>
+                    <img src="/img/card/card1.png" alt="">
+                    <h3></h3>
+                </div>
+                <div class="px-6 pt-11 pb-4 border-2 border-black flex flex-col content-between">
+                    <h3 class="text-xl font-bold pb-6">Вахтовые автобусы</h3>
+                    <img src="/img/card/card2.png" alt="">
+                    <h3></h3>
+                </div>
+                <div class="px-6 pt-11 pb-4 border-2 border-black flex flex-col content-between">
+                    <h3 class="text-xl font-bold pb-6">Передвижные мастерские</h3>
+                    <img src="img/card/card3.png" alt="">
+                    <h3></h3>
+                </div>
+                <div class="px-6 pt-11 pb-4 border-2 border-black flex flex-col content-between">
+                    <h3 class="text-xl font-bold pb-6">Жилые модули</h3>
+                    <img src="img/card/card4.png" alt="">
+                    <h3></h3>
+                </div>
+                <div class="px-6 pt-11 pb-4 border-2 border-black flex flex-col content-between">
+                    <h3 class="text-xl font-bold pb-6">Вахтовые автобусы</h3>
+                    <img src="img/card/card2.png" alt="">
+                    <h3></h3>
+                </div >
+                <div class="px-6 pt-11 pb-4 border-2 border-black flex flex-col content-between">
+                    <h3 class="text-xl font-bold pb-6">Передвижные мастерские</h3>
+                    <img src="img/card/card3.png" alt="">
+                    <h3></h3>
+                </div>
+                <div class="px-6 pt-11 pb-4 border-2 border-black flex flex-col content-between">
+                    <h3 class="text-xl font-bold pb-6">Спецтехника с краном-манипулятором</h3>
+                    <img src="img/card/card5.png" alt="">
+                    <h3></h3>
+                </div>
+                <div class="px-6 pt-11 pb-4 border-2 border-black flex flex-col content-between">
+                    <h3 class="text-xl font-bold pb-6">Жилые модули</h3>
+                    <img src="img/card/card4.png" alt="">
+                    <h3></h3>
+                </div>
+                <div class="px-6 pt-11 pb-4 border-2 border-black flex flex-col content-between"> 
+                    <h3 class="text-xl font-bold pb-6">Жилые модули</h3>
+                    <img src="img/card/card4.png" alt="">
+                    <h3></h3>
+                </div>  
+                <div class="px-6 pt-11 pb-4 border-2 border-black flex flex-col content-between"> 
+                    <h3 class="text-xl font-bold pb-6">Спецтехника с краном-манипулятором</h3>
+                    <img src="img/card/card5.png" alt="">
+                    <h3></h3>
+                </div>
+                <div class="px-6 pt-11 pb-4 border-2 border-black flex flex-col content-between">
+                    <h3 class="text-xl font-bold pb-6">Вахтовые автобусы</h3>
+                    <img src="img/card/card2.png" alt="">
+                    <h3></h3>
+                </div>
+                <div class="px-6 pt-11 pb-4 border-2 border-black flex flex-col content-between">
+                    <h3 class="text-xl font-bold pb-6">Передвижные мастерские</h3>
+                    <img src="img/card/card3.png" alt="">
+                    <h3></h3>
+                </div>
+                <div class="px-6 pt-11 pb-4 border-2 border-black flex flex-col content-between">
+                    <h3 class="text-xl font-bold pb-6">Спецтехника с краном-манипулятором</h3>
+                    <img src="img/card/card5.png" alt="">
+                    <h3></h3>
+                </div>
+                <div class="px-6 pt-11 pb-4 border-2 border-black flex flex-col content-between">
+                    <h3 class="text-xl font-bold pb-6">Вахтовые автобусы</h3>
+                    <img src="img/card/card2.png" alt="">
+                    <h3></h3>
+                </div>
+                <div class="px-6 pt-11 pb-4 border-2 border-black flex flex-col content-between">
+                    <h3 class="text-xl font-bold pb-6">Жилые модули</h3>
+                    <img src="img/card/card4.png" alt="">
+                    <h3></h3>
+                </div>
+                <div class="px-6 pt-11 pb-4 border-2 border-black flex flex-col content-between">
+                    <h3 class="text-xl font-bold pb-6">Передвижные мастерские</h3>
+                    <img src="img/card/card3.png" alt="">
+                    <h3></h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>

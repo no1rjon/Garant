@@ -1,7 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400;500&family=Quicksand&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
+}
+
+.font-overpass {
+    font-family: 'Overpass', sans-serif;
+}
+
+.bg-first {
+    background-image: url(/img/background/group_back.png);
+    background-position:;
+    background-repeat: no-repeat;
 }
