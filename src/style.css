@@ -12,7 +12,25 @@ body {
 }
 
 .bg-first {
-    background-image: url(/img/background/group_back.png);
-    background-position:;
+    background-image: url(/img/background/Group.png);
     background-repeat: no-repeat;
+
+}
+
+.section-title {
+    @apply text-5xl font-semibold pl-36 font-overpass
+}
+
+
+
+.card {
+    @apply px-6 pt-11 pb-4 border-2 border-black flex flex-col space-y-3
+}
+
+.card__title {
+    @apply text-xl font-bold h-1/5
+}
+
+.card__link {
+    @apply h-1/5 text-xl font-overpass font-semibold text-[#00437B] pt-3 pr-2 hover:text-[#00547b]
 }
