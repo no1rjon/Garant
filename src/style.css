@@ -17,6 +17,46 @@ body {
 
 }
 
+.bg-footer {
+    background-image: url(/img/background/back_footer.png);
+    background-position: 0px 100px;
+    background-repeat: no-repeat;
+}
+
+.button-animation {
+    position: relative;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.button-animation::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left:-25px;
+    transform:skewX(-37.62deg);
+    z-index: -1;
+    background: #FF9B00;
+    transition: .5s;
+}
+
+.button-animation:hover:before,:focus:before {
+    width: 120%;
+}
+
+.button-animation:active::before {
+    background-color: #FF9B00B2;
+    transition: 0.1s;
+}
+
+.button-animation:active {
+    border-color: #FF9B00B2;
+    transition: 0.1s;
+}
+
 .section-title {
     @apply text-5xl font-semibold pl-36 font-overpass
 }
@@ -34,3 +74,4 @@ body {
 .card__link {
     @apply h-1/5 text-xl font-overpass font-semibold text-[#00437B] pt-3 pr-2 hover:text-[#00547b]
 }
+

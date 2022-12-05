@@ -20,7 +20,7 @@
         <!-- Logo and contacts -->
             <!-- Left side -->
         <div class="mb-6 flex flex-row flex-nowrap items-center justify-between">
-            <img class="px-6 py-2 border-8 border-orange-400" src="/img/logo/logo_rus.svg" alt="logo_rus">
+            <img class="px-6 py-2 border-8 border-[#FF9B00]" src="/img/logo/logo_rus.svg" alt="logo_rus">
             <!-- Right side -->
             <div class="inline-flex items-center">
                 <!-- Contacts -->
@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <!-- Buttons -->
-                <button class="px-6 py-1 border-8 border-orange-400 hover:bg-orange-100"><img src="/img/button/obr_sv.svg" alt="obr_sv"></button>
+                <button class="font-overpass font-extrabold text-3xl text-[#111831] border-[#FF9B00] border-[10px] py-[5px] px-[50px] button-animation">Обратная связь</button>
             </div>
         </div>
         <!-- Навигационная панель -->
@@ -58,11 +58,11 @@
     <main class="container mx-auto max-w-[1300px] mt-16">
         <!-- section gallery -->
         <section>
-            <img class="p-0 border-[10px] border-orange-400" src="/img/card/main_card.png">
+            <img class="p-0 border-[10px] border-[#FF9B00]" src="/img/card/main_card.png">
             <div class="flex justify-between content-center mt-12">
                 <button class="hover:scale-105 transition-all"><img src="/img/icon/icon_arrow_left.svg" alt=""></button>
                 <div class="flex justify-between items-center space-x-5">
-                    <button class="bg-orange-400 w-10 h-2 hover:bg-orange-500"></button>
+                    <button class="bg-[#FF9B00] w-10 h-2 hover:bg-orange-400"></button>
                     <button class="bg-gray-300 w-10 h-2 hover:bg-gray-500"></button>
                     <button class="bg-gray-300 w-10 h-2 hover:bg-gray-500"></button>
                     <button class="bg-gray-300 w-10 h-2 hover:bg-gray-500"></button>
@@ -266,7 +266,7 @@
             <h2 class="section-title">Наши партнеры</h2>
             <div class="flex items-center justify-between mt-24 pb-10">
                 <img src="/img/icon/icon_arrow_left.svg">
-                <div class="grid grid-cols-4 gap-x-5 gap-y-14 grid-">
+                <div class="grid grid-cols-4 gap-x-8 gap-y-14">
                     <div class="flex justify-start items-center"><img class="" src="img/partners/BALT.png"></div>
                     <div class="flex justify-start items-center"><img class="" src="/img/partners/VTB.png"></div>
                     <div class="flex justify-start items-center"><img class="" src="/img/partners/RESO.png"></div>
@@ -283,23 +283,45 @@
         <section class="mt-36">
             <h2 class="section-title">Наши отгрузки</h2>
             <div class="mt-24 grid grid-cols-8 gap-x-5">
-                <div class="grid grid-rows-5 col-span-3 border-[3px] border-black p-5">
+                <div class="grid grid-rows-5 gap-y-5 col-span-3 border-[3px] border-black p-5">
                     <h3 class="row-span-2 font-overpass font-bold text-3xl">Тяжелый самосвал КамАЗ 6522 передан клиенту для работы с инертными материалами</h3>
                     <span class="flex items-center text-xl font-medium"><img src="/img/icon/icon_location.svg"> Нижневартовск</span>
                     <img class="row-span-2" src="/img/shipment/shipment_first.png">
                 </div>
-                <div class="grid grid-rows-5 col-span-3 border-[3px] border-black p-5">
+                <div class="grid grid-rows-5 gap-y-5 col-span-3 border-[3px] border-black p-5">
                     <h3 class="row-span-2 font-overpass font-bold text-3xl">Клиенту из Москвы, передан крупный экскаватор для сноса зданий-Doosan 360 будет работать с гидроножницами (1)</h3>
                     <span class="flex items-center text-xl font-medium"><img src="/img/icon/icon_location.svg"> Москва</span>
                     <img class="row-span-2" src="/img/shipment/shipment_second.png">
                 </div>
                 <div class="grid grid-rows-5 col-span-2 flex-col justify-between border-[3px] border-black p-5">
-                    <h3 class="row-span-2 font-overpass font-bold text-3xl">Посмотреть все отгрузки</h3>
-                    <img class="row-end- w-[132] h-[132]" src="/img/icon/icon_arrow_45.svg">
+                    <h3 class="text-blue-900 row-span-2 font-overpass font-bold text-3xl">Посмотреть все отгрузки</h3>
+                    <div class="row-end-7 row-span-2 flex justify-end w-[132] h-[132]"><img class="w-[132] h-[132]" src="/img/icon/icon_arrow_45.svg"></div>
                 </div>
             </div>
         </section>
     </main>
+    <!-- footer -->
+    <footer class="pt-20 bg-footer">
+        <section class="pt-24 mt-40 mx-auto max-w-[1300px] border-t-[10px] border-[#FF9B00] flex justify-between pb-14">
+            <!-- left side -->
+            <div class="flex flex-col gap-y-6 ">
+                <img src="/img/logo/logo_footer.svg">
+                <a class="text-[#223062] font-bold text-3xl mt-20" href="tel:+74959899570">8 (495) 989-95-70</a>
+                <a class="text-[#223062] font-bold text-3xl" href="mailto:asv@garant-tehnika.ru">asv@garant-tehnika.ru</a>
+            </div>
+            <!-- right side -->
+            <div class="flex flex-col gap-y-11">
+                <button class="font-overpass font-extrabold text-3xl text-[#111831] border-[#FF9B00] border-[10px] py-[5px] px-[50px] button-animation">Обратная связь</button>
+                <ul class="font-semibold text-[#111831] text-xl flex flex-col gap-7">
+                    <li><a href="">Каталог спецтехники</a></li>
+                    <li><a href="">Услуги</a></li>
+                    <li><a href="">Наши отгрузки</a></li>
+                    <li><a href="">Контакты</a></li>
+                    <li><a href="">Новости</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
 
 </body>
 </html>
