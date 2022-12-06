@@ -19,7 +19,7 @@ body {
 
 .bg-footer {
     background-image: url(/img/background/back_footer.png);
-    background-position: 0px 100px;
+    background-position: 0px 140px;
     background-repeat: no-repeat;
 }
 
@@ -33,7 +33,7 @@ body {
     content: "";
     display: block;
     position: absolute;
-    height: 100%;
+    height: 105%;
     width: 0%;
     top: 0;
     left:-25px;
@@ -61,8 +61,21 @@ body {
     @apply text-5xl font-semibold pl-36 font-overpass
 }
 
+/* nav */
+.nav {
+    @apply font-bold text-xl flex justify-between
+}
 
+.nav a{
+    @apply hover:text-gray-600
+}
 
+nav li + li::before{
+    content: '';
+    @apply border-l-4 px-9
+}
+
+/* card */
 .card {
     @apply px-6 pt-11 pb-4 border-2 border-black flex flex-col space-y-3
 }
@@ -72,6 +85,109 @@ body {
 }
 
 .card__link {
-    @apply h-1/5 text-xl font-overpass font-semibold text-[#00437B] pt-3 pr-2 hover:text-[#00547b]
+    @apply flex justify-end 
+}
+
+.card__link img{
+    @apply transition
+}
+
+.card__link:hover img, :focus img{
+    @apply rotate-45 transition
+}
+
+.card__link_text {
+    @apply h-1/5 text-xl font-overpass font-semibold text-[#00437B] pt-3 pr-2
+}
+
+/* block-news */
+@layer components {
+    .block-news {
+        @apply col-span-2 border-t-4 border-gray-400 pt-11 mt-24
+    }
+    
+    .block-news__title {
+        @apply mb-11 flex justify-between items-center space-x-4
+    }
+    
+    .block-news__title h3{
+        @apply font-overpass font-bold text-3xl
+    }
+    
+    .block-news__title span{
+        @apply text-xl font-light text-[#3C4155] self-start max-w-[450px]
+    }
+    
+    .block-news__link {
+        @apply  flex justify-between items-center
+    }
+    
+    .block-news__link p{
+        @apply text-xl font-light text-[#3C4155] max-w-[450px]
+    }
+    
+    .block-news__link img{
+        @apply transition
+    }
+    
+    .block-news__link:hover img{
+        @apply rotate-45 transition
+    }    
+}
+
+/* shipments */
+.shipments {
+    @apply mt-24 grid grid-cols-8 gap-x-5
+}
+
+.shipments__block {
+    @apply grid grid-rows-5 gap-y-5 col-span-3 border-[3px] border-black p-5
+}
+
+.shipments__link {
+    transition: 0.5s;
+    @apply grid grid-rows-5 col-span-2 border-[3px] border-[#00437B] p-5
+}
+
+.shipments__link svg{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    overflow: visible;
+    transition: .5s;
+}
+
+.shipments__link path {
+    transition: 1.0s;
+}
+
+.shipments__link:hover{
+    background-color: #00437B;
+    transition: 0.5s;
+}
+
+.shipments__link:hover h3{
+    color: #ffff;
+    transition: 0.5s;
+}
+
+.shipments__link:hover path{
+    fill:#ffff;
+    transition: 0.5s;
+}
+
+.shipments__link:hover svg{
+    transition: .5s;
+    @apply rotate-45
+}
+
+.shipments__link:active path{
+    fill: rgba(255, 255, 255, 0.400);  
+    transition: 0.2s;
+}
+
+.shipments__link:active svg{
+    right: -60px;
+    transition: .2s;
 }
 
