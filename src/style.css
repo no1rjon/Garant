@@ -87,18 +87,24 @@ button{
 
     
     .card {
-        @apply px-6 pt-11 pb-4 border-2 border-black flex flex-col space-y-3
+        @apply px-4 pt-8 border-2 border-black col-span-4 lg:col-span-1 grid gap-y-0 xl:grid-rows-6 grid-rows-4
     }
     
     .card__title {
-        @apply text-xl font-bold h-1/5
+        @apply text-xl font-bold row-span-1 xl:min-h-min min-h-[90px]
+    }
+
+    .card>img{
+        @apply self-center justify-self-center xl:row-span-4 row-span-2
     }
     
     .card__link {
-        @apply flex justify-end 
+        @apply row-span-1 flex justify-end 
     }
     
     .card__link img{
+        max-width: 46px;
+        max-height: 46px;
         @apply transition
     }
     
@@ -107,7 +113,11 @@ button{
     }
     
     .card__link_text {
-        @apply h-1/5 text-xl font-overpass font-semibold text-[#00437B] pt-3 pr-2
+        @apply h-1/5 text-xl font-overpass font-semibold text-[#00437B] pt-3 pr-2 
+    }
+
+    .card__link_text> img{
+        @apply self-end
     }
 }    
 
