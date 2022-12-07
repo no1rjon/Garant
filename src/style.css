@@ -7,6 +7,11 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+button{
+    rotate: none;
+
+}
+
 .font-overpass {
     font-family: 'Overpass', sans-serif;
 }
@@ -62,43 +67,49 @@ body {
 }
 
 /* nav */
-.nav {
-    @apply font-bold text-xl flex justify-between
-}
-
-.nav a{
-    @apply hover:text-gray-600
-}
-
-nav li + li::before{
-    content: '';
-    @apply border-l-4 px-9
+@layer components{
+    .nav {
+        @apply font-bold text-xl flex justify-between
+    }
+    
+    .nav a{
+        @apply hover:text-gray-600
+    }
+    
+    .nav li + li::before{
+        content: '';
+        @apply border-l-4 px-9
+    }
 }
 
 /* card */
-.card {
-    @apply px-6 pt-11 pb-4 border-2 border-black flex flex-col space-y-3
-}
+@layer components {
 
-.card__title {
-    @apply text-xl font-bold h-1/5
-}
-
-.card__link {
-    @apply flex justify-end 
-}
-
-.card__link img{
-    @apply transition
-}
-
-.card__link:hover img, :focus img{
-    @apply rotate-45 transition
-}
-
-.card__link_text {
-    @apply h-1/5 text-xl font-overpass font-semibold text-[#00437B] pt-3 pr-2
-}
+    
+    .card {
+        @apply px-6 pt-11 pb-4 border-2 border-black flex flex-col space-y-3
+    }
+    
+    .card__title {
+        @apply text-xl font-bold h-1/5
+    }
+    
+    .card__link {
+        @apply flex justify-end 
+    }
+    
+    .card__link img{
+        @apply transition
+    }
+    
+    .card__link:hover img, .card__link:focus img{
+        @apply rotate-45 transition
+    }
+    
+    .card__link_text {
+        @apply h-1/5 text-xl font-overpass font-semibold text-[#00437B] pt-3 pr-2
+    }
+}    
 
 /* block-news */
 @layer components {
@@ -106,7 +117,7 @@ nav li + li::before{
         @apply col-span-2 border-t-4 border-gray-400 pt-11 mt-24
     }
     
-    .block-news__title {
+    .block-news .block-news__title {
         @apply mb-11 flex justify-between items-center space-x-4
     }
     
@@ -136,58 +147,61 @@ nav li + li::before{
 }
 
 /* shipments */
-.shipments {
-    @apply mt-24 grid grid-cols-8 gap-x-5
-}
+@layer components{
+    .shipments {
+        @apply mt-24 grid grid-cols-8 gap-x-5
+    }
+    
+    .shipments__block {
+        @apply grid grid-rows-5 gap-y-5 col-span-3 border-[3px] border-black p-5
+    }
+    
+    .shipments__link {
+        transition: 0.5s;
+        @apply grid grid-rows-5 col-span-2 border-[3px] border-[#00437B] p-5
+    }
+    
+    .shipments__link svg{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        overflow: visible;
+        transition: .5s;
+    }
+    
+    .shipments__link path {
+        transition: 1.0s;
+    }
+    
+    .shipments__link:hover{
+        background-color: #00437B;
+        transition: 0.5s;
+    }
+    
+    .shipments__link:hover h3{
+        color: #ffff;
+        transition: 0.5s;
+    }
+    
+    .shipments__link:hover path{
+        fill:#ffff;
+        transition: 0.5s;
+    }
+    
+    .shipments__link:hover svg{
+        transition: .5s;
+        @apply rotate-45
+    }
+    
+    .shipments__link:active path{
+        fill: rgba(255, 255, 255, 0.400);  
+        transition: 0.2s;
+    }
+    
+    .shipments__link:active svg{
+        right: -60px;
+        transition: .2s;
+    }    
+} 
 
-.shipments__block {
-    @apply grid grid-rows-5 gap-y-5 col-span-3 border-[3px] border-black p-5
-}
-
-.shipments__link {
-    transition: 0.5s;
-    @apply grid grid-rows-5 col-span-2 border-[3px] border-[#00437B] p-5
-}
-
-.shipments__link svg{
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    overflow: visible;
-    transition: .5s;
-}
-
-.shipments__link path {
-    transition: 1.0s;
-}
-
-.shipments__link:hover{
-    background-color: #00437B;
-    transition: 0.5s;
-}
-
-.shipments__link:hover h3{
-    color: #ffff;
-    transition: 0.5s;
-}
-
-.shipments__link:hover path{
-    fill:#ffff;
-    transition: 0.5s;
-}
-
-.shipments__link:hover svg{
-    transition: .5s;
-    @apply rotate-45
-}
-
-.shipments__link:active path{
-    fill: rgba(255, 255, 255, 0.400);  
-    transition: 0.2s;
-}
-
-.shipments__link:active svg{
-    right: -60px;
-    transition: .2s;
-}
 
