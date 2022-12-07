@@ -22,7 +22,8 @@
         <div class="mb-6 flex flex-row flex-nowrap items-center justify-between">
             <img class="px-6 py-2 border-8 border-[#FF9B00]" src="/img/logo/logo_rus.svg" alt="logo_rus">
             <!-- Right side -->
-            <div class="inline-flex items-center">
+            <!-- DESCKTOP -->
+            <div class="hidden sm:inline-flex items-center">
                 <!-- Contacts -->
                 <div class="flex flex-col justify-between pr-9">
                     <div class="inline-flex items-center justify-between">
@@ -37,9 +38,13 @@
                 <!-- Buttons -->
                 <button class="font-overpass font-extrabold text-3xl text-[#111831] border-[#FF9B00] border-[10px] py-[5px] px-[50px] button-animation">Обратная связь</button>
             </div>
+            <!-- MOBILE -->
+            <div class="block lg:hidden items-center ">
+
+            </div>
         </div>
         <!-- Навигационная панель -->
-        <nav>
+        <nav class="hidden lg:block">
             <ul class="nav">
                 <li><a href="#">Каталог спецтехники</a></li>
                 <li><a href="#">Услуги</a></li>
@@ -75,10 +80,10 @@
         <!-- section catalog -->
         <section class="mt-28">
             <h2 class="section-title">Каталог Спецтехники</h2>
-            <div class="grid grid-cols-4 gap-[20px] mt-20">
+            <div class="grid grid-cols-4 gap-5 mt-20">
                 <div class="card">
                     <h3 class="card__title">Фургоны в наличии</h3>
-                    <img class="h-3/5" src="/img/card/card1.png" alt="">
+                    <img src="/img/card/card1.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
                         <img class="" src="/img/icon/icon_arrow_45.svg">
@@ -86,7 +91,7 @@
                 </div>
                 <div class="card">
                     <h3 class="card__title">Вахтовые автобусы</h3>
-                    <img class="h-3/5" src="/img/card/card2.png" alt="">
+                    <img src="/img/card/card2.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
                         <img src="/img/icon/icon_arrow_45.svg">
@@ -94,7 +99,7 @@
                 </div>
                 <div class="card">
                     <h3 class="card__title">Передвижные мастерские</h3>
-                    <img class="h-3/5" src="img/card/card3.png" alt="">
+                    <img src="img/card/card3.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
                         <img class="" src="/img/icon/icon_arrow_45.svg">
@@ -102,7 +107,7 @@
                 </div>
                 <div class="card">
                     <h3 class="card__title">Жилые модули</h3>
-                    <img class="h-3/5" src="img/card/card4.png" alt="">
+                    <img src="img/card/card4.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
                         <img class="" src="/img/icon/icon_arrow_45.svg">
@@ -110,7 +115,7 @@
                 </div>
                 <div class="card">
                     <h3 class="card__title">Вахтовые автобусы</h3>
-                    <img class="h-3/5" src="img/card/card2.png" alt="">
+                    <img src="img/card/card2.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
                         <img class="" src="/img/icon/icon_arrow_45.svg">
@@ -118,7 +123,7 @@
                 </div >
                 <div class="card">
                     <h3 class="card__title">Передвижные мастерские</h3>
-                    <img class="h-3/5" src="img/card/card3.png" alt="">
+                    <img src="img/card/card3.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
                         <img class="" src="/img/icon/icon_arrow_45.svg">
@@ -126,7 +131,7 @@
                 </div>
                 <div class="card">
                     <h3 class="card__title">Спецтехника с краном-манипулятором</h3>
-                    <img class="h-3/5" src="img/card/card5.png" alt="">
+                    <img src="img/card/card5.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
                         <img class="" src="/img/icon/icon_arrow_45.svg">
@@ -134,7 +139,7 @@
                 </div>
                 <div class="card">
                     <h3 class="card__title">Жилые модули</h3>
-                    <img class="h-3/5" src="img/card/card4.png" alt="">
+                    <img src="img/card/card4.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
                         <img class="" src="/img/icon/icon_arrow_45.svg">
@@ -142,7 +147,7 @@
                 </div>
                 <div class="card"> 
                     <h3 class="card__title">Жилые модули</h3>
-                    <img class="h-3/5" src="img/card/card4.png" alt="">
+                    <img src="img/card/card4.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
                         <img class="" src="/img/icon/icon_arrow_45.svg">
@@ -150,7 +155,7 @@
                 </div>  
                 <div class="card"> 
                     <h3 class="card__title">Спецтехника с краном-манипулятором</h3>
-                    <img class="h-3/5" src="img/card/card5.png" alt="">
+                    <img src="img/card/card5.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
                         <img class="" src="/img/icon/icon_arrow_45.svg">
@@ -158,7 +163,7 @@
                 </div>
                 <div class="card">
                     <h3 class="card__title">Вахтовые автобусы</h3>
-                    <img class="h-3/5" src="img/card/card2.png" alt="">
+                    <img src="img/card/card2.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
                         <img class="" src="/img/icon/icon_arrow_45.svg">
@@ -166,7 +171,7 @@
                 </div>
                 <div class="card">
                     <h3 class="card__title">Передвижные мастерские</h3>
-                    <img class="h-3/5" src="img/card/card3.png" alt="">
+                    <img src="img/card/card3.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
                         <img class="" src="/img/icon/icon_arrow_45.svg">
@@ -174,7 +179,7 @@
                 </div>
                 <div class="card">
                     <h3 class="card__title">Спецтехника с краном-манипулятором</h3>
-                    <img class="h-3/5" src="img/card/card5.png" alt="">
+                    <img src="img/card/card5.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
                         <img class="" src="/img/icon/icon_arrow_45.svg">
@@ -182,7 +187,7 @@
                 </div>
                 <div class="card">
                     <h3 class="card__title">Вахтовые автобусы</h3>
-                    <img class="h-3/5" src="img/card/card2.png" alt="">
+                    <img src="img/card/card2.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
                         <img class="" src="/img/icon/icon_arrow_45.svg">
@@ -190,7 +195,7 @@
                 </div>
                 <div class="card">
                     <h3 class="card__title">Жилые модули</h3>
-                    <img class="h-3/5" src="img/card/card4.png" alt="">
+                    <img src="img/card/card4.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
                         <img class="" src="/img/icon/icon_arrow_45.svg">
@@ -198,7 +203,7 @@
                 </div>
                 <div class="card">
                     <h3 class="card__title">Передвижные мастерские</h3>
-                    <img class="h-3/5" src="img/card/card3.png" alt="">
+                    <img src="img/card/card3.png" alt="">
                     <a href="#" class="card__link">
                         <span class="card__link_text">Перейти</span>
                         <img class="" src="/img/icon/icon_arrow_45.svg">
