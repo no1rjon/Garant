@@ -16,14 +16,14 @@
 <body class="bg-first">
 
     <!-- header -->
-    <header class="container mx-auto py-10 max-w-[1300px]">
+    <header class="container mx-auto py-10 max-w-xs lg:max-w-6xl">
         <!-- Logo and contacts -->
             <!-- Left side -->
         <div class="mb-6 flex flex-row flex-nowrap items-center justify-between">
             <img class="px-6 py-2 border-8 border-[#FF9B00]" src="/img/logo/logo_rus.svg" alt="logo_rus">
             <!-- Right side -->
             <!-- DESCKTOP -->
-            <div class="hidden sm:inline-flex items-center">
+            <div class="hidden lg:inline-flex items-center">
                 <!-- Contacts -->
                 <div class="flex flex-col justify-between pr-9">
                     <div class="inline-flex items-center justify-between">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <!-- Buttons -->
-                <button class="font-overpass font-extrabold text-3xl text-[#111831] border-[#FF9B00] border-[10px] py-[5px] px-[50px] button-animation">Обратная связь</button>
+                <button class="font-overpass font-extrabold text-3xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 button-animation">Обратная связь</button>
             </div>
             <!-- MOBILE -->
             <div class="block lg:hidden items-center ">
@@ -56,7 +56,7 @@
     </header>
 
     <!-- main -->
-    <main class="container mx-auto max-w-[1300px] mt-16">
+    <main class="container mx-auto max-w-xs lg:max-w-6xl mt-16">
         <!-- section gallery -->
         <section>
             <img class="p-0 border-[10px] border-[#FF9B00]" src="/img/card/main_card.png">
@@ -78,9 +78,9 @@
             </div>
         </section>
         <!-- section catalog -->
-        <section class="mt-28">
+        <section class="relative mt-28 mx-auto">
             <h2 class="section-title">Каталог Спецтехники</h2>
-            <div class="grid grid-cols-4 gap-5 mt-20">
+            <div class="grid grid-cols-4 gap-5 mt-20 mx-auto">
                 <div class="card">
                     <h3 class="card__title">Фургоны в наличии</h3>
                     <img src="/img/card/card1.png" alt="">
@@ -310,7 +310,7 @@
 
     <!-- footer -->
     <footer class="pt-20 bg-footer">
-        <section class="pt-24 mt-40 mx-auto max-w-[1300px] border-t-[10px] border-[#FF9B00] flex justify-between pb-14">
+        <section class="pt-24 mt-40 mx-auto max-w-6xl border-t-[10px] border-[#FF9B00] flex justify-between pb-14">
             <!-- left side -->
             <div class="flex flex-col gap-y-6 ">
                 <img src="/img/logo/logo_footer.svg">
@@ -319,7 +319,7 @@
             </div>
             <!-- right side -->
             <div class="flex flex-col gap-y-11">
-                <button class="font-overpass font-extrabold text-3xl text-[#111831] border-[#FF9B00] border-[10px] py-[5px] px-[50px] button-animation">Обратная связь</button>
+                <button class="font-overpass font-extrabold text-3xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 button-animation">Обратная связь</button>
                 <ul class="font-semibold text-[#111831] text-xl flex flex-col gap-7">
                     <li><a href="">Каталог спецтехники</a></li>
                     <li><a href="">Услуги</a></li>

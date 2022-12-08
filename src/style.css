@@ -87,7 +87,7 @@ button{
 
     
     .card {
-        @apply px-4 pt-8 border-2 border-black col-span-4 lg:col-span-1 grid gap-y-0 xl:grid-rows-6 grid-rows-4
+        @apply px-4 pt-8 border-2 border-black col-span-4 lg:col-span-1 grid gap-y-0 xl:grid-rows-6 grid-rows-4 max-w-xs lg:max-w-none
     }
     
     .card__title {
