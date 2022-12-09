@@ -63,7 +63,7 @@ button{
 }
 
 .section-title {
-    @apply text-5xl font-semibold pl-36 font-overpass
+    @apply text-5xl font-semibold font-overpass pl-0 lg:pl-36 
 }
 
 /* nav */

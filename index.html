@@ -16,11 +16,11 @@
 <body class="bg-first">
 
     <!-- header -->
-    <header class="container mx-auto py-10 max-w-xs lg:max-w-6xl">
-        <!-- Logo and contacts -->
+    <header class="mx-auto py-10 px-3 lg:px-0 lg:max-w-6xl">
+        <!-- Logo and contacts  -->
+        <div class="mb-6 flex items-center justify-between">
             <!-- Left side -->
-        <div class="mb-6 flex flex-row flex-nowrap items-center justify-between">
-            <img class="px-6 py-2 border-8 border-[#FF9B00]" src="/img/logo/logo_rus.svg" alt="logo_rus">
+            <img class="px-6 py-2 border-8 border-[#FF9B00] w-[40%] h-[40%]" src="/img/logo/logo_rus.svg" alt="logo_rus">
             <!-- Right side -->
             <!-- DESCKTOP -->
             <div class="hidden lg:inline-flex items-center">
@@ -40,7 +40,11 @@
             </div>
             <!-- MOBILE -->
             <div class="block lg:hidden items-center ">
-
+                <svg class="" weight="54px" height="54px" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="6" y="9" width="42" height="5" fill="#111831"/>
+                    <rect x="6" y="24" width="42" height="5" fill="#111831"/>
+                    <rect x="6" y="39" width="42" height="5" fill="#111831"/>
+                    </svg>                    
             </div>
         </div>
         <!-- Навигационная панель -->
@@ -56,7 +60,7 @@
     </header>
 
     <!-- main -->
-    <main class="container mx-auto max-w-xs lg:max-w-6xl mt-16">
+    <main class="mx-auto hidden lg:block lg:max-w-6xl mt-16">
         <!-- section gallery -->
         <section>
             <img class="p-0 border-[10px] border-[#FF9B00]" src="/img/card/main_card.png">
@@ -309,7 +313,7 @@
     </main>
 
     <!-- footer -->
-    <footer class="pt-20 bg-footer">
+    <footer class="pt-20 bg-footer hidden lg:block">
         <section class="pt-24 mt-40 mx-auto max-w-6xl border-t-[10px] border-[#FF9B00] flex justify-between pb-14">
             <!-- left side -->
             <div class="flex flex-col gap-y-6 ">
