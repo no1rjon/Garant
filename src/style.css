@@ -152,11 +152,11 @@ button{
 /* block-news */
 @layer components {
     .block-news {
-        @apply border-t-4 border-gray-400 pt-11 col-span-4 lg:col-span-2
+        @apply grid grid-rows-2 border-t-4 border-gray-400 pt-11 col-span-4 lg:col-span-2
     }
     
     .block-news_overflow {
-        @apply hidden lg:block
+        @apply hidden lg:grid
     }
 
     .block-news .block-news__title {
