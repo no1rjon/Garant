@@ -16,7 +16,7 @@
 <body class="bg-first">
 
     <!-- header -->
-    <header class="mx-auto py-10 px-3 lg:px-0 lg:max-w-6xl">
+    <header class="mx-auto py-10 px-3 max-w-lg lg:px-0 lg:max-w-6xl">
         <!-- Logo and contacts  -->
         <div class="mb-6 flex items-center justify-between">
             <!-- Left side -->
@@ -320,18 +320,21 @@
     </main>
 
     <!-- footer -->
-    <footer class="pt-20 mx-auto bg-footer px-2 max-w-lg lg:max-w-none lg:block">
-        <section class="pt-24 mt-40 mx-auto max-w-6xl border-t-[10px] border-[#FF9B00] flex flex-col  pb-1 lg:flex-row lg:justify-between lg:pb-14">
+    <footer class="pt-20 pb-5 px-2 mx-auto  bg-[url('/img/background/back_footer.png')] bg-bottom bg-no-repeat lg:block lg:pb-0">
+        <section class="pt-24 mt-40 mx-auto border-t-[10px] border-[#FF9B00] flex flex-col lg:gap-x-32 pb-1 max-w-lg lg:max-w-6xl lg:flex-row lg:justify-between lg:pb-14">
             <!-- left side -->
-            <div class="flex flex-col gap-y-6 ">
+            <div class="flex flex-col gap-y-16 ">
                 <img src="/img/logo/logo_footer.svg">
-                <a class="text-[#223062] font-bold text-3xl mt-20" href="tel:+74959899570">8 (495) 989-95-70</a>
-                <a class="text-[#223062] font-bold text-3xl" href="mailto:asv@garant-tehnika.ru">asv@garant-tehnika.ru</a>
+                <button class="font-overpass font-extrabold text-xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 whitespace-nowrap button-animation block lg:hidden">Обратная связь</button>
+                <div class="flex flex-col gap-4 lg:gap-7">
+                    <a class="text-[#223062] font-bold text-xl lg:text-3xl" href="tel:+74959899570">8 (495) 989-95-70</a>
+                    <a class="text-[#223062] font-bold text-xl lg:text-3xl" href="mailto:asv@garant-tehnika.ru">asv@garant-tehnika.ru</a>
+                </div>
             </div>
             <!-- right side -->
             <div class="flex flex-col gap-y-11">
-                <button class="font-overpass font-extrabold text-3xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 button-animation">Обратная связь</button>
-                <ul class="font-semibold text-[#111831] text-xl flex flex-col gap-7">
+                <button class="font-overpass font-extrabold text-3xl text-[#111831] border-[#FF9B00] border-[10px] py-1 px-12 whitespace-nowrap button-animation hidden lg:block">Обратная связь</button>
+                <ul class="font-semibold text-[#111831] text-xl flex flex-col gap-4 mt-4 lg:gap-7 lg:mt-0">
                     <li><a href="">Каталог спецтехники</a></li>
                     <li><a href="">Услуги</a></li>
                     <li><a href="">Наши отгрузки</a></li>

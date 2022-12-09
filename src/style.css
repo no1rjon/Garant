@@ -24,7 +24,15 @@ button{
 
 .bg-footer {
     background-image: url(/img/background/back_footer.png);
-    background-position: 0px 140px;
+    background-position: 0% 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-footer_small {
+    background-image: url(/img/background/back_footer_small.png);
+    background-position: 500px 100px;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -209,7 +217,7 @@ button{
     
     .shipments__link:hover{
         background-color: #00437B;
-        transition: 0.5s;
+        transition: 1.2s;
     }
     
     .shipments__link:hover h3{
