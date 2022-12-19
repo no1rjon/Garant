@@ -1235,6 +1235,11 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+body.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 button{
   rotate: none;
 }
