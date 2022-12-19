@@ -247,7 +247,7 @@ button{
 } 
 
 .nav-modal {
-    @apply hidden fixed z-[1] left-0 top-0 w-[100%] h-[100%] overflow-auto bg-white
+    @apply hidden fixed z-[1] left-0 top-0 w-[100%] h-[100%] overflow-hidden bg-white
 }
 
 .nav-modal__window {
