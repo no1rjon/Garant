@@ -119,19 +119,19 @@ button{
 
     
     .card {
-        @apply px-4 pt-8 border-2 border-black col-span-4 lg:col-span-1 grid gap-y-0 xl:grid-rows-6 grid-rows-4  max-w-[300px] justify-self-center lg:max-w-none
+        @apply px-4 pt-8 border-2 border-black col-span-4 lg:col-span-1 grid gap-y-4 row-auto justify-self-center lg:max-w-none min-w-full min-h-full
     }
     
     .card__title {
-        @apply text-xl font-bold row-span-1 xl:min-h-min min-h-[90px]
+        @apply text-xl font-bold  min-h-[85px]
     }
 
     .card>img{
-        @apply self-center justify-self-center xl:row-span-4 row-span-2 object-cover
+        @apply self-center justify-self-center object-cover min-w-full
     }
     
     .card__link {
-        @apply row-span-1 flex justify-end 
+        @apply flex justify-end pb-4
     }
     
     .card__link img{
@@ -272,3 +272,4 @@ button{
 .nav-modal_open {
     @apply block
 }
+
