@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/style.css">
+    <link
+        rel="stylesheet"
+        href="node_modules/swiper/swiper-bundle.css"
+    />
     <title>Garant Auto</title>
 </head>
 <body class="bg-first">
@@ -88,22 +92,16 @@
     <main class="mx-auto px-3 lg:px-0 max-w-lg lg:max-w-6xl mt-16">
         <!-- section gallery -->
         <section>
-            <img class="p-0 border-[10px] border-[#FF9B00]" src="/img/card/main_card.png">
-            <div class="gallery">
-                <button class="gallery__swiper"><img src="/img/icon/icon_arrow_left.svg"></button>
-                <div class="gallery__panel">
-                    <button class="gallery__panel_button bg-[#FF9B00] hover:bg-orange-400"></button>
-                    <button class="gallery__panel_button"></button>
-                    <button class="gallery__panel_button"></button>
-                    <button class="gallery__panel_button"></button>
-                    <button class="gallery__panel_button"></button>
-                    <button class="gallery__panel_button"></button>
-                    <button class="gallery__panel_button"></button>
-                    <button class="gallery__panel_button"></button>
-                    <button class="gallery__panel_button"></button>
-                    <button class="gallery__panel_button"></button>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img class="" src="/img/card/main_card.png"></div>
+                    <div class="swiper-slide"><img class="" src="/img/card/main_card.png"></div>
+                    <div class="swiper-slide"><img class="" src="/img/card/main_card.png"></div>
                 </div>
-                <button class="gallery__swiper"><img src="/img/icon/icon_arrow_right.svg"></button>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
         <!-- section catalog -->
@@ -370,6 +368,9 @@
         </section>
     </footer>
 
-    <script src="/js/modal.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.js"></script>
+    <script src="/js/modal.js" type="module"></script>
+    <script src="/js/main.js"></script>
+    
 </body>
 </html>

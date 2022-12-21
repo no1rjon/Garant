@@ -78,6 +78,10 @@ button{
     @apply text-4xl lg:text-5xl font-semibold font-overpass pl-0 lg:pl-36 
 }
 
+.swiper {
+    @apply p-0 border-[10px] border-[#FF9B00] max-w-[100%] max-h-[100%]
+  }
+
 /* gallery */
 
 @layer components {
