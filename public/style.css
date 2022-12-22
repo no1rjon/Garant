@@ -679,13 +679,6 @@ select {
   --tw-backdrop-sepia:  ;
 }
 
-.gallery {
-  margin-top: 3rem;
-  display: flex;
-  align-content: center;
-  justify-content: space-between;
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -1010,7 +1003,7 @@ select {
   position: fixed;
   left: 0px;
   top: 0px;
-  z-index: 1;
+  z-index: 2;
   display: none;
   height: 100%;
   width: 100%;
@@ -1206,6 +1199,10 @@ select {
   height: 100%;
 }
 
+.w-\[45\%\] {
+  width: 45%;
+}
+
 .w-\[80px\] {
   width: 80px;
 }
@@ -1298,6 +1295,10 @@ select {
   gap: 0.5rem;
 }
 
+.gap-y-5 {
+  row-gap: 1.25rem;
+}
+
 .gap-y-2 {
   row-gap: 0.5rem;
 }
@@ -1324,12 +1325,12 @@ select {
        column-gap: 1.25rem;
 }
 
-.gap-y-5 {
-  row-gap: 1.25rem;
-}
-
 .self-center {
   align-self: center;
+}
+
+.justify-self-center {
+  justify-self: center;
 }
 
 .overflow-x-hidden {
@@ -1628,6 +1629,8 @@ button{
   }
 }
 
+/* SWIPER */
+
 .swiper {
   max-height: 100%;
   max-width: 100%;
@@ -1637,7 +1640,21 @@ button{
   padding: 0px;
 }
 
-/* gallery */
+.s-pagination .swiper-pagination-bullet {
+  border-radius: 0;
+  height: 4px;
+  width: 8px;
+  flex-shrink: 0;
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity))
+}
+
+@media (min-width: 640px) {
+  .s-pagination .swiper-pagination-bullet {
+    height: 10px;
+    width: 30px;
+  }
+}
 
 /* nav */
 
@@ -1684,6 +1701,10 @@ button{
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:w-\[100\%\] {
+    width: 100%;
   }
 
   .lg\:w-\[50\%\] {
